@@ -1,0 +1,112 @@
+:root {
+  /* grey */
+  --grey-50: #f0f4f8;
+  --grey-100: #d9e2ec;
+  --grey-200: #bcccdc;
+  --grey-300: #9fb3c8;
+  --grey-400: #829ab1;
+  --grey-500: #627d98;
+  --grey-600: #486581;
+  --grey-700: #334e68;
+  --grey-800: #243b53;
+  --grey-900: #102a43;
+
+  /* rest of the colors */
+  --black: #222;
+  --white: #fff;
+  --red-light: #f8d7da;
+  --red-dark: #842029;
+  --green-light: #d1e7dd;
+  --green-dark: #0f5132;
+
+  /* rest of the vars */
+  --backgroundColor: var(--white);
+  --textColor: var(--grey-900);
+  --borderRadius: 0.25rem;
+  --letterSpacing: 1px;
+  --transition: 0.3s ease-in-out all;
+  --max-width: 1120px;
+  --fixed-width: 600px;
+  --fluid-width: 90vw;
+  --nav-link-font-size: 18px;
+
+  /* box shadow*/
+  --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans" sans-serif;
+}
+
+body {
+}
+
+.navigation-bar {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: var(--white);
+}
+
+.navigation-bar .nav-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.navigation-bar .logo {
+  height: auto;
+  width: 65px;
+}
+
+.navigation-bar .menu-icon {
+  height: 45px;
+  width: 45px;
+  display: block;
+  align-self: center;
+  cursor: pointer;
+}
+
+.navigation-bar a {
+  display: block;
+  /* padding: 30px 16px; */
+  padding: 15px 16px;
+  /* Remove this on desktop view */
+  margin-top: 5px;
+  color: var(--black);
+  text-align: center;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: var(--nav-link-font-size);
+  letter-spacing: var(--letterSpacing);
+}
+
+.hide-content {
+  display: none;
+}
+
+@media only screen and (min-width: 600px) {
+  .navigation-bar {
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--white);
+  }
+
+  .navigation-bar .menu-icon {
+    display: none;
+  }
+
+  .navigation-bar .content {
+    display: flex !important;
+  }
+}
