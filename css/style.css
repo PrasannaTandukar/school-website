@@ -1,3 +1,6 @@
+/* Mobile first approach */
+
+/* Global variables */
 :root {
   /* grey */
   --grey-50: #f0f4f8;
@@ -40,6 +43,7 @@
     0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
+/* Default properties of every element */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -47,9 +51,7 @@
   font-family: "Open Sans" sans-serif;
 }
 
-body {
-}
-
+/* Start of navigation bar CSS */
 .navigation-bar {
   display: flex;
   flex-direction: column;
@@ -79,6 +81,7 @@ body {
 
 .navigation-bar a {
   display: block;
+  align-self: center;
   /* padding: 30px 16px; */
   padding: 15px 16px;
   /* Remove this on desktop view */
@@ -94,7 +97,69 @@ body {
 .hide-content {
   display: none;
 }
+/* End of navigation bar CSS */
 
+/* Start of image carousel CSS */
+.slider-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  /* margin-top: 150px; */
+}
+
+.slider-container .slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.slider-container .slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.slider-container .slider-buttons button {
+  width: 40px;
+  height: 40px;
+  font-size: 15px;
+  color: #4a4a49;
+  background-color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-container .slider-buttons .prevBtnSlider {
+  position: absolute;
+  top: 50%;
+  margin-left: 10px;
+  z-index: 5;
+}
+
+.slider-container .slider-buttons .nextBtnSlider {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-right: 10px;
+  z-index: 5;
+}
+
+.slider-container .slider-buttons img {
+  display: block;
+  margin: auto;
+  height: 30px;
+  width: 30px;
+}
+/* End of image carousel CSS */
+
+/*  Media query runs when the screen size is greater than 600px */
 @media only screen and (min-width: 600px) {
   .navigation-bar {
     flex-direction: row;
