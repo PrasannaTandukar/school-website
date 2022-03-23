@@ -240,6 +240,34 @@ hr {
   align-self: flex-end;
 }
 
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* Remove this later */
+  margin-top: 100px;
+  padding: 20px;
+  color: white;
+  background-color: var(--box-green);
+}
+
+footer .map h3 {
+  margin-bottom: 10px;
+}
+
+footer .map iframe {
+  height: 150px;
+  width: 150px;
+}
+
+footer .footer-content {
+  margin-left: 20px;
+}
+
+footer .footer-info {
+  text-align: left;
+}
+
 /*  Media query runs when the screen size is greater than 600px */
 @media only screen and (min-width: 600px) {
   .navigation-bar {
