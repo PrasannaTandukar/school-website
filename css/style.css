@@ -21,6 +21,9 @@
   --red-dark: #842029;
   --green-light: #d1e7dd;
   --green-dark: #0f5132;
+  --blue: #044fa2;
+  --orange: #f06e22;
+  --green: #54ab40;
 
   /* rest of the vars */
   --backgroundColor: var(--white);
@@ -43,16 +46,15 @@
     0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
+body {
+  font-family: "Open Sans" sans-serif;
+}
+
 /* Default properties of every element */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Open Sans" sans-serif;
-}
-
-body {
-  background-color: blue;
 }
 
 /* Start of navigation bar CSS */
@@ -110,9 +112,9 @@ body {
 
 /* Start of image carousel CSS */
 .slider-container {
-  max-width: 1100px;
+  width: 100%;
   margin: 0 auto;
-  height: 40vh;
+  height: 30vh;
   position: relative;
   overflow: hidden;
   margin-top: 72px;
@@ -147,14 +149,14 @@ body {
 
 .slider-container .slider-buttons .prevBtnSlider {
   position: absolute;
-  top: 50%;
+  top: 40%;
   margin-left: 10px;
   z-index: 5;
 }
 
 .slider-container .slider-buttons .nextBtnSlider {
   position: absolute;
-  top: 50%;
+  top: 40%;
   right: 0;
   margin-right: 10px;
   z-index: 5;
@@ -167,6 +169,34 @@ body {
   width: 30px;
 }
 /* End of image carousel CSS */
+
+/* Start of Homepage description CSS */
+.home-description {
+  padding: 15px 28px;
+}
+
+.home-description h1 {
+  font-size: 20px;
+  text-align: center;
+}
+
+.home-description .school-name {
+  color: var(--blue);
+}
+
+.home-description hr {
+  height: 3px;
+  width: 80px;
+  margin: 5px auto;
+  background-color: var(--blue);
+  border: none;
+  border-radius: 5px;
+}
+
+.home-description p {
+  margin-top: 20px;
+  text-align: center;
+}
 
 /*  Media query runs when the screen size is greater than 600px */
 @media only screen and (min-width: 600px) {
