@@ -51,12 +51,21 @@
   font-family: "Open Sans" sans-serif;
 }
 
+body {
+  background-color: blue;
+}
+
 /* Start of navigation bar CSS */
 .navigation-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   display: flex;
   flex-direction: column;
   overflow: hidden;
   background-color: var(--white);
+  z-index: 500;
 }
 
 .navigation-bar .nav-header {
@@ -106,7 +115,7 @@
   height: 500px;
   position: relative;
   overflow: hidden;
-  /* margin-top: 150px; */
+  margin-top: 72px;
 }
 
 .slider-container .slide {
