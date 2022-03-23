@@ -270,6 +270,14 @@ footer .footer-info {
 
 /*  Media query runs when the screen size is greater than 600px */
 @media only screen and (min-width: 600px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  hr {
+    width: 170px;
+  }
+
   .navigation-bar {
     flex-direction: row;
     justify-content: space-between;
@@ -282,5 +290,33 @@ footer .footer-info {
 
   .navigation-bar .content {
     display: flex !important;
+  }
+
+  .slider-container {
+    height: 93vh;
+  }
+
+  .home-description {
+    margin-top: 50px;
+  }
+
+  .home-description p {
+    margin: 25px auto auto auto;
+    width: 650px;
+  }
+
+  .principle-message {
+    width: 750px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 10px;
+  }
+
+  .principle-message .message-content {
+    margin-left: 30px;
+  }
+
+  footer {
+    justify-content: space-around;
   }
 }
