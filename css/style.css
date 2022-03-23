@@ -24,6 +24,7 @@
   --blue: #044fa2;
   --orange: #f06e22;
   --green: #54ab40;
+  --box-green: rgb(63, 122, 111);
 
   /* rest of the vars */
   --backgroundColor: var(--white);
@@ -46,15 +47,33 @@
     0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
-body {
-  font-family: "Open Sans" sans-serif;
-}
-
 /* Default properties of every element */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-family: "Open Sans" sans-serif;
+}
+
+h1 {
+  font-size: 20px;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+hr {
+  height: 3px;
+  width: 80px;
+  margin: 5px auto;
+  background-color: var(--blue);
+  border: none;
+  border-radius: 5px;
 }
 
 /* Start of navigation bar CSS */
@@ -170,32 +189,55 @@ body {
 }
 /* End of image carousel CSS */
 
+/* HOMEPAGE */
 /* Start of Homepage description CSS */
 .home-description {
   padding: 15px 28px;
-}
-
-.home-description h1 {
-  font-size: 20px;
-  text-align: center;
 }
 
 .home-description .school-name {
   color: var(--blue);
 }
 
-.home-description hr {
-  height: 3px;
-  width: 80px;
-  margin: 5px auto;
-  background-color: var(--blue);
-  border: none;
-  border-radius: 5px;
-}
-
 .home-description p {
   margin-top: 20px;
-  text-align: center;
+}
+/* End of Homepage Description */
+
+.principle-message {
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  background-color: var(--box-green);
+  color: var(--white);
+}
+
+.principle-message .principle-image {
+  display: block;
+  align-self: center;
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+.principle-message .message-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.principle-message .quote {
+  display: block;
+  height: 35px;
+  width: 35px;
+}
+
+.principle-message .normal-quote {
+  transform: scaleX(-1);
+}
+
+.principle-message .flip-quote {
+  align-self: flex-end;
 }
 
 /*  Media query runs when the screen size is greater than 600px */
