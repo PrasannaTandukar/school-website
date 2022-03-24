@@ -42,17 +42,7 @@ const slider = () => {
   prevBtn.style.display = "none";
 };
 
-// Function for hamburger menu of navigation bar
-function toggleMenu() {
-  let button = document.querySelector(".menu-icon");
-  button.addEventListener("click", (e) => {
-    let content = document.querySelector(".content");
-    content.classList.toggle("hide-content");
-  });
-}
-
 // This function runs when all of the DOM's content (ie. HTML, CSS) loads
 window.addEventListener("DOMContentLoaded", (e) => {
-  toggleMenu();
   slider();
 });

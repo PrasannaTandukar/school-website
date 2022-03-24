@@ -24,7 +24,7 @@
   --blue: #044fa2;
   --orange: #f06e22;
   --green: #54ab40;
-  --box-green: rgb(63, 122, 111);
+  --box-green: #54ab40;
 
   /* rest of the vars */
   --backgroundColor: var(--white);
@@ -76,58 +76,160 @@ hr {
   border-radius: 5px;
 }
 
-/* Start of navigation bar CSS */
-.navigation-bar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  background-color: var(--white);
-  z-index: 500;
+nav {
+  float: right;
 }
-
-.navigation-bar .nav-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 10px;
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
-
-.navigation-bar .logo {
-  height: auto;
-  width: 65px;
+nav ul li {
+  float: left;
+  position: relative;
 }
-
-.navigation-bar .menu-icon {
-  height: 45px;
-  width: 45px;
+nav ul li a {
   display: block;
-  align-self: center;
-  cursor: pointer;
-}
-
-.navigation-bar a {
-  display: block;
-  align-self: center;
-  /* padding: 30px 16px; */
-  padding: 15px 16px;
-  /* Remove this on desktop view */
-  margin-top: 5px;
-  color: var(--black);
-  text-align: center;
+  padding: 0 20px;
+  line-height: 70px;
+  background: #ffffff;
+  color: #463f3f;
   text-decoration: none;
-  text-transform: capitalize;
-  font-size: var(--nav-link-font-size);
-  letter-spacing: var(--letterSpacing);
+  /*
+  The full path of this code is nav ul li a:not(:only-child):after. This means that the code will apply to any a tag in our nav list that is NOT an only child, aka any dropdown. The :after means it comes after the output of the tag. I’ve decided that to specify any nav item as a dropdown, it will be followed by a unicode arrow – ▾ (#9662).
+  */
+}
+nav ul li a:hover {
+  background: #f2f2f2;
+  color: #fb5958;
+}
+nav ul li a:not(:only-child):after {
+  padding-left: 4px;
+  content: " ▾";
+}
+nav ul li ul li {
+  min-width: 190px;
+}
+nav ul li ul li a {
+  padding: 15px;
+  line-height: 20px;
 }
 
-.hide-content {
+.nav-dropdown {
+  position: absolute;
+  z-index: 1;
+  /* Guarantees that the dropdown will display on top of any content. */
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
   display: none;
 }
-/* End of navigation bar CSS */
+
+.nav-mobile {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #fff;
+  height: 70px;
+  width: 70px;
+}
+
+@media only screen and (max-width: 800px) {
+  .nav-mobile {
+    display: block;
+  }
+
+  nav {
+    width: 100%;
+    padding: 70px 0 15px;
+  }
+  nav ul {
+    display: none;
+  }
+  nav ul li {
+    float: none;
+  }
+  nav ul li a {
+    padding: 15px;
+    line-height: 20px;
+  }
+  nav ul li ul li a {
+    padding-left: 30px;
+  }
+}
+#nav-toggle {
+  position: absolute;
+  left: 18px;
+  top: 22px;
+  cursor: pointer;
+  padding: 10px 35px 16px 0px;
+}
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  background: #463f3f;
+  position: absolute;
+  display: block;
+  content: "";
+  transition: all 300ms ease-in-out;
+}
+#nav-toggle span:before {
+  top: -10px;
+}
+#nav-toggle span:after {
+  bottom: -10px;
+}
+#nav-toggle.active span {
+  background-color: transparent;
+}
+#nav-toggle.active span:before,
+#nav-toggle.active span:after {
+  top: 0;
+}
+#nav-toggle.active span:before {
+  transform: rotate(45deg);
+}
+#nav-toggle.active span:after {
+  transform: rotate(-45deg);
+}
+
+@media screen and (min-width: 800px) {
+  .nav-list {
+    display: block !important;
+  }
+}
+/* 
+.navigation – the outer wrapper for the navbar. Specifies the height and color, and will stretch the full width of the viewport.
+*/
+.navigation {
+  height: 70px;
+  background: #ffffff;
+}
+
+/*
+.nav-container – the inner wrapper for the navbar. Defines how far the actual content should stretch.
+*/
+.nav-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.brand {
+  position: absolute;
+  padding-left: 20px;
+  float: left;
+  line-height: 70px;
+  text-transform: uppercase;
+  font-size: 1.4em;
+}
+.brand a,
+.brand a:visited {
+  color: #463f3f;
+  text-decoration: none;
+}
 
 /* Start of image carousel CSS */
 .slider-container {
@@ -135,8 +237,8 @@ hr {
   margin: 0 auto;
   height: 30vh;
   position: relative;
+  top: -15px;
   overflow: hidden;
-  margin-top: 72px;
 }
 
 .slider-container .slide {
@@ -278,22 +380,9 @@ footer .footer-info {
     width: 170px;
   }
 
-  .navigation-bar {
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: var(--white);
-  }
-
-  .navigation-bar .menu-icon {
-    display: none;
-  }
-
-  .navigation-bar .content {
-    display: flex !important;
-  }
-
   .slider-container {
     height: 93vh;
+    top: 0px;
   }
 
   .home-description {

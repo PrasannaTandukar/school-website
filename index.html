@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/jquery.min.js"></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,23 +18,33 @@
   </head>
   <body>
     <!-- Navigation bar -->
-    <nav class="navigation-bar">
-      <div class="nav-header">
-        <img class="logo" src="./img/school-logo.png" alt="school logo" />
-        <img
-          class="menu-icon"
-          src="./icons/outline_menu_black_24dp.png"
-          alt="menu-icon"
-        />
+    <section class="navigation">
+      <div class="nav-container">
+        <div class="brand">
+          <a href="#!">LOGO</a>
+        </div>
+        <nav>
+          <div class="nav-mobile">
+            <a id="nav-toggle" href="#!"><span></span></a>
+          </div>
+          <ul class="nav-list">
+            <!-- Setting the links to #! will ensure that no action takes place on click. -->
+            <li><a href="#!">Home</a></li>
+            <li><a href="#!">About</a></li>
+            <li>
+              <a href="#!">Services</a>
+              <ul class="nav-dropdown">
+                <li><a href="#!">Web Design</a></li>
+                <li><a href="#!">Web Development</a></li>
+                <li><a href="#!">Graphic Design</a></li>
+              </ul>
+            </li>
+            <li><a href="#!">Pricing</a></li>
+            <li><a href="#!">Contact</a></li>
+          </ul>
+        </nav>
       </div>
-      <div class="content hide-content">
-        <a href="index.html">home</a>
-        <a href="#">about us</a>
-        <a href="#">courses</a>
-        <a href="#">notice</a>
-        <a href="#">contact us</a>
-      </div>
-    </nav>
+    </section>
 
     <!-- slider container -->
     <div class="slider-container">
