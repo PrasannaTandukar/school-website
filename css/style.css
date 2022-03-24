@@ -347,6 +347,52 @@ nav ul li ul li a {
 .principle-message .flip-quote {
   align-self: flex-end;
 }
+/* End of homepage */
+
+/* Start of About Us page */
+.about-us .school-image {
+  position: relative;
+  top: -15px;
+  display: block;
+  width: 100%;
+  height: 30vh;
+  margin-top: 0;
+  object-fit: cover;
+}
+
+.about-us .school-history {
+  margin: 15px auto;
+}
+
+.about-us .school-history p {
+  margin-top: 15px;
+}
+
+.about-us .mission-vision {
+  color: var(--white);
+}
+
+.about-us .mission-vision p {
+  margin-top: 10px;
+}
+
+.about-us .mission-vision h3 {
+  text-align: center;
+}
+
+.about-us .mission {
+  background-color: var(--orange);
+  margin: 20px;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.about-us .vision {
+  background-color: var(--box-green);
+  margin: 20px;
+  padding: 20px;
+  border-radius: 20px;
+}
 
 footer {
   display: flex;
