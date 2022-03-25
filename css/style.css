@@ -384,7 +384,7 @@ nav ul li ul li a {
   background-color: hsl(212, 33%, 89%);
 }
 
-.active {
+.active-btn {
   display: block !important;
   background-color: var(--box-green) !important;
   color: white;
@@ -410,7 +410,7 @@ nav ul li ul li a {
   cursor: pointer;
 }
 
-.tab-btn:hover:not(.active) {
+.tab-btn:hover:not(.active-btn) {
   color: #49a6e9;
   background: hsl(205, 100%, 96%);
 }

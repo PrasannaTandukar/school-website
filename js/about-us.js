@@ -4,17 +4,17 @@ const changeActive = (e) => {
   let activeContent;
 
   buttons.forEach((button) => {
-    button.classList.remove("active");
+    button.classList.remove("active-btn");
   });
   contents.forEach((content) => {
-    content.classList.remove("active");
+    content.classList.remove("active-btn");
     if (e.currentTarget.value == content.id) {
       activeContent = content;
     }
   });
 
-  e.currentTarget.classList.add("active");
-  activeContent.classList.add("active");
+  e.currentTarget.classList.add("active-btn");
+  activeContent.classList.add("active-btn");
 };
 
 const main = () => {
