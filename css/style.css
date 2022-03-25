@@ -368,31 +368,60 @@ nav ul li ul li a {
   margin-top: 15px;
 }
 
-.about-us .mission-vision {
+/* Start of about us menu */
+.about {
+  margin: auto;
+  padding: 20px;
   color: var(--white);
 }
 
-.about-us .mission-vision p {
-  margin-top: 10px;
+.btn-container {
+  margin-top: 25px;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 10px 10px 0 0;
+  background-color: hsl(212, 33%, 89%);
 }
 
-.about-us .mission-vision h3 {
+.active {
+  display: block !important;
+  background-color: var(--box-green) !important;
+  color: white;
+}
+
+#history-btn {
+  border-radius: 10px 0 0 0;
+}
+
+#vision-btn {
+  border-radius: 0 10px 0 0;
+}
+
+.tab-btn {
+  display: block;
+  margin: 0;
+  padding: 17px 0;
+  font-size: 17px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.tab-btn:hover:not(.active) {
+  color: #49a6e9;
+  background: hsl(205, 100%, 96%);
+}
+
+.content {
+  display: none;
+  padding: 20px 10px 50px 10px;
+  border-radius: 0 0 10px 10px;
   text-align: center;
 }
-
-.about-us .mission {
-  background-color: var(--orange);
-  margin: 20px;
-  padding: 20px;
-  border-radius: 20px;
-}
-
-.about-us .vision {
-  background-color: var(--box-green);
-  margin: 20px;
-  padding: 20px;
-  border-radius: 20px;
-}
+/* End of about us menu */
 
 footer {
   display: flex;
@@ -459,6 +488,14 @@ footer .footer-info {
 
   .about-us .school-image {
     top: 0;
+  }
+
+  .about {
+    max-width: 800px;
+  }
+
+  .about p {
+    margin: auto 20px;
   }
 
   footer {
