@@ -507,7 +507,7 @@ footer .media-icons img {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    max-width: 1420px;
+    max-width: 1120px;
   }
 
   .home-description p {
@@ -518,7 +518,7 @@ footer .media-icons img {
 
   .home-description img {
     min-height: 770px;
-    width: 700px;
+    width: 400px;
   }
 
   .principle-message {
