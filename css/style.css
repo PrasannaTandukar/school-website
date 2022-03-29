@@ -79,8 +79,9 @@ hr {
 }
 
 .navigation img {
-  height: 70px;
-  width: 70px;
+  margin-top: 5px;
+  height: 60px;
+  width: 60px;
   object-fit: cover;
   z-index: 50;
 }
@@ -479,6 +480,13 @@ footer .footer-info {
   text-align: left;
 }
 
+footer .media-icons img {
+  height: 30px;
+  width: 30px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
 /*  Media query runs when the screen size is greater than 600px */
 @media only screen and (min-width: 1000px) {
   h1 {
@@ -509,7 +517,7 @@ footer .footer-info {
   }
 
   .home-description img {
-    min-height: 770px;
+    min-height: 100px;
     width: 400px;
   }
 
