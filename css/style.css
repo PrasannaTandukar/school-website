@@ -312,6 +312,8 @@ nav ul li ul li a {
   display: flex;
   flex-direction: column;
   background-color: #e8edee;
+  box-shadow: var(--shadow-2);
+  border-radius: 5px;
 }
 
 .home-description h1,
@@ -332,50 +334,14 @@ nav ul li ul li a {
   width: 100%;
   height: auto;
   object-fit: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .home-description-inner {
   margin: 30px 20px;
 }
 /* End of Homepage Description */
-
-.principle-message {
-  margin: auto;
-  width: 90vw;
-  display: flex;
-  flex-direction: column;
-  padding: 15px;
-  background-color: var(--box-green);
-  color: var(--white);
-}
-
-.principle-message .principle-image {
-  display: block;
-  align-self: center;
-  height: 100px;
-  width: 100px;
-  object-fit: cover;
-  border-radius: 100%;
-}
-
-.principle-message .message-container {
-  display: flex;
-  flex-direction: row;
-}
-
-.principle-message .quote {
-  display: block;
-  height: 35px;
-  width: 35px;
-}
-
-.principle-message .normal-quote {
-  transform: scaleX(-1);
-}
-
-.principle-message .flip-quote {
-  align-self: flex-end;
-}
 /* End of homepage */
 
 /* Start of About Us page */
@@ -454,13 +420,17 @@ nav ul li ul li a {
 
 footer {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: flex-start;
   /* Remove this later */
   margin-top: 100px;
   padding: 20px;
   color: white;
   background-color: var(--box-green);
+}
+
+footer .map {
+  margin-left: 20px;
 }
 
 footer .map h3 {
@@ -473,6 +443,7 @@ footer .map iframe {
 }
 
 footer .footer-content {
+  margin-top: 20px;
   margin-left: 20px;
 }
 
@@ -503,33 +474,30 @@ footer .media-icons img {
   }
 
   .home-description {
+    position: relative;
     margin-top: 50px;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1120px;
+    flex-direction: column;
+    align-items: flex-end;
+    max-width: 1420px;
   }
 
   .home-description p {
-    margin: 25px auto auto auto;
+    margin-top: 25px;
     max-width: 650px;
     font-size: 17px;
   }
 
   .home-description img {
-    min-height: 770px;
-    width: 400px;
-  }
-
-  .principle-message {
-    width: 750px;
-    margin: 50px auto;
-    padding: 30px;
-    border-radius: 10px;
-  }
-
-  .principle-message .message-content {
-    margin-left: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 700px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 5px;
   }
 
   .about-us .school-image {
@@ -545,6 +513,11 @@ footer .media-icons img {
   }
 
   footer {
+    flex-direction: row;
     justify-content: space-around;
+  }
+
+  footer .footer-content {
+    margin-top: auto;
   }
 }
