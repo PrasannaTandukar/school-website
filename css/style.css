@@ -369,7 +369,36 @@ nav ul li ul li a {
   margin-top: 15px;
   margin-left: 15px;
 }
+/* End of about us page */
 
+/* Start of facilities page */
+
+.facility .facility-heading {
+  text-align: center;
+}
+
+.more-less {
+  text-decoration: none;
+  color: var(--blue);
+  cursor: pointer;
+}
+
+#more-1,
+#more-2,
+#more-2,
+#more-3,
+#more-4,
+#more-5,
+#more-6,
+#more-7,
+#more-8,
+#more-9 {
+  display: none;
+}
+
+/* End of facilities page */
+
+/* Start of footer */
 footer {
   display: flex;
   flex-direction: column;
@@ -409,6 +438,7 @@ footer .media-icons img {
   object-fit: cover;
   cursor: pointer;
 }
+/* End of footer */
 
 /*  Media query runs when the screen size is greater than 600px */
 @media only screen and (min-width: 1000px) {
@@ -426,11 +456,16 @@ footer .media-icons img {
   }
 
   .home-description {
-    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     margin-top: 50px;
-    flex-direction: column;
-    align-items: flex-end;
     max-width: 1420px;
+  }
+
+  .home-description-inner {
+    max-width: 650px;
   }
 
   .home-description p {
@@ -440,14 +475,11 @@ footer .media-icons img {
   }
 
   .home-description img {
-    position: absolute;
-    top: 0;
-    left: 0;
     display: block;
     padding: 0;
     margin: 0;
     height: 100%;
-    width: 700px;
+    width: 720px;
     border-top-right-radius: 0;
     border-bottom-left-radius: 5px;
   }
@@ -468,6 +500,27 @@ footer .media-icons img {
 
   .about p {
     margin: auto 20px;
+  }
+
+  .facility h1 {
+    font-size: 30px;
+  }
+
+  .facility .school-name {
+    margin-top: 40px;
+    font-size: 40px;
+  }
+
+  .facility p {
+    margin-top: 10px;
+  }
+
+  .facility .home-description {
+    max-width: 1000px;
+  }
+
+  .facility .home-description img {
+    width: 500px;
   }
 
   footer {
