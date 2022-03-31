@@ -398,6 +398,32 @@ nav ul li ul li a {
 
 /* End of facilities page */
 
+/* Start of apply page */
+.apply {
+  margin: auto 15px;
+}
+
+.apply h1 {
+  margin-top: 15px;
+}
+
+.apply ul {
+  margin-left: 15px;
+}
+
+.apply a {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 15px;
+  text-decoration: none;
+  background-color: var(--blue);
+  color: var(--white);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* End of apply page */
+
 /* Start of footer */
 footer {
   display: flex;
@@ -521,6 +547,16 @@ footer .media-icons img {
 
   .facility .home-description img {
     width: 500px;
+  }
+
+  .apply {
+    max-width: 85vw;
+    margin: 34px auto auto auto;
+  }
+
+  .apply p,
+  .apply ul {
+    margin-top: 5px;
   }
 
   footer {
