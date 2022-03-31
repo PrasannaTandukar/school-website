@@ -424,6 +424,31 @@ nav ul li ul li a {
 
 /* End of apply page */
 
+/* Start of gallery page */
+
+.gallery h1 {
+  text-align: center;
+}
+
+.gallery .gallery-images {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery img {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  height: 200px;
+  width: 90vw;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* End of gallery page */
+
 /* Start of footer */
 footer {
   display: flex;
@@ -557,6 +582,23 @@ footer .media-icons img {
   .apply p,
   .apply ul {
     margin-top: 5px;
+  }
+
+  .gallery .gallery-images {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .gallery h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 40px;
+  }
+
+  .gallery img {
+    height: 500px;
+    width: 600px;
   }
 
   footer {
