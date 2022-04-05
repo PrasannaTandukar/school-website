@@ -383,6 +383,10 @@ nav ul li ul li a {
   cursor: pointer;
 }
 
+.more-less:hover {
+  color: var(--green);
+}
+
 #more-1,
 #more-2,
 #more-2,
