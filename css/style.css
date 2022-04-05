@@ -456,6 +456,7 @@ footer .row {
 }
 
 footer {
+  margin-top: 40px;
   line-height: 1.5;
   background-color: rgb(6, 6, 62);
   padding: 10px;
