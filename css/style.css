@@ -432,6 +432,25 @@ nav ul li ul li a {
 
 /* Start of gallery page */
 
+.main-g-images img {
+  margin-bottom: 0 !important;
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+.main-g-images a {
+  text-decoration: none;
+}
+
+.main-g-images span {
+  display: block;
+  padding: 5px;
+  color: var(--black);
+  background-color: #e8edee;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
 .gallery h1 {
   text-align: center;
 }
