@@ -438,6 +438,9 @@ nav ul li ul li a {
   border-bottom-right-radius: 0 !important;
 }
 
+.main-g-images img:hover {
+  opacity: 60%;
+}
 .main-g-images a {
   text-decoration: none;
 }
@@ -471,6 +474,14 @@ nav ul li ul li a {
   object-fit: cover;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.gallery .school-name a {
+  text-decoration: none;
+  color: #044fa2;
+}
+.gallery .school-name a:hover {
+  color: green;
 }
 
 .modal-content {
