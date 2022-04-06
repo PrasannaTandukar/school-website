@@ -71,7 +71,7 @@ p {
 }
 
 .heading-hr {
-  margin: auto;
+  margin: 0 auto;
   width: 100px;
   border: 0;
   border-radius: 5px;
@@ -741,8 +741,11 @@ footer .copyright {
 
   .gallery h1 {
     margin-top: 20px;
-    margin-bottom: 20px;
     font-size: 40px;
+  }
+
+  .heading-hr {
+    margin-bottom: 20px;
   }
 
   .gallery img {
