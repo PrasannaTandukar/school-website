@@ -71,11 +71,12 @@ p {
 }
 
 .heading-hr {
-  width: 28%;
+  margin: auto;
+  width: 100px;
   border: 0;
-  padding-top: 5px;
-  border-bottom: 3px orange;
-  margin: 20px auto;
+  border-radius: 5px;
+  height: 3px;
+  background-color: orange;
 }
 
 .navigation img {
