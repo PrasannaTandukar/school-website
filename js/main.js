@@ -1,3 +1,4 @@
+// See more or less funciton
 function moreLess(value) {
   let dots = document.getElementById(`dots-${value}`);
   let moreText = document.getElementById(`more-${value}`);
