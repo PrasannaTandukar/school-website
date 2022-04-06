@@ -406,7 +406,7 @@ nav ul li ul li a {
   margin-left: 15px;
 }
 
-.apply a {
+.apply-button {
   display: inline-block;
   margin-top: 15px;
   padding: 10px 15px;
@@ -443,6 +443,24 @@ nav ul li ul li a {
 }
 
 /* End of gallery page */
+
+/* Start of academics 2 page */
+.academics-II {
+  padding: 15px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.academics-II .column-2 {
+  display: none;
+}
+
+.academics-II .column-2 h1 {
+  margin: 25px;
+  cursor: pointer;
+}
+/* End of academics 2 page */
 
 /* Start of footer */
 
@@ -654,6 +672,28 @@ footer .copyright {
   .gallery img {
     height: 500px;
     width: 600px;
+  }
+
+  .academics-II {
+    flex-direction: row;
+    justify-content: space-around;
+    height: 90vh;
+  }
+
+  .academics-II .column-1 {
+    padding: 30px;
+    align-self: center;
+    width: 500px;
+    background-color: #e8edee;
+    box-shadow: var(--shadow-2);
+    border-radius: 5px;
+  }
+
+  .academics-II .column-2 {
+    display: block;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
   }
 
   footer .row {
