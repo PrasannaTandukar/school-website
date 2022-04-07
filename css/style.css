@@ -766,7 +766,13 @@ footer .copyright {
   .academics-II {
     flex-direction: row;
     justify-content: space-around;
-    height: 90vh;
+    height: 95vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(../img/1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
   }
 
   .academics-II .column-1 {
@@ -783,6 +789,16 @@ footer .copyright {
     display: flex;
     flex-direction: row;
     align-self: center;
+  }
+
+  .academics-II .column-2 h1 {
+    letter-spacing: 2px;
+    font-size: 45px;
+    color: var(--white);
+  }
+
+  .academics-II .column-2 h1:hover {
+    color: var(--green);
   }
 
   footer .row {
