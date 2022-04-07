@@ -536,6 +536,14 @@ nav ul li ul li a {
   margin: 25px;
   cursor: pointer;
 }
+
+.academics-II-content {
+  padding: 15px;
+}
+
+.academics-II-content h1 {
+  padding-top: 15px;
+}
 /* End of academics 2 page */
 
 /* Start of footer */
@@ -799,6 +807,11 @@ footer .copyright {
 
   .academics-II .column-2 h1:hover {
     color: var(--green);
+  }
+
+  .academics-II-content {
+    margin: 15px auto auto auto;
+    max-width: 80vw;
   }
 
   footer .row {
