@@ -79,6 +79,19 @@ p {
   background-color: orange;
 }
 
+/* Start of top-nav bar */
+#top-nav-bar {
+  display: none;
+}
+
+#top-nav-bar .top-nav-element {
+  color: var(--white);
+  margin: 5px 15px;
+}
+
+/* End of top-nav bar */
+
+/* Start of navigation bar */
 .navigation img {
   margin-top: 5px;
   height: 60px;
@@ -656,6 +669,14 @@ footer .copyright {
 @media only screen and (min-width: 1000px) {
   h1 {
     font-size: 40px;
+  }
+
+  #top-nav-bar {
+    display: block;
+    background-color: var(--blue);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 
   .slider-container {
