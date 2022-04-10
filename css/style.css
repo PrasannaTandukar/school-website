@@ -550,6 +550,12 @@ nav ul li ul li a {
   cursor: pointer;
 }
 
+.academics-II .column-2 a {
+  text-decoration: none;
+  color: var(--white);
+  cursor: pointer;
+}
+
 .academics-II-content {
   padding: 15px;
 }
@@ -826,7 +832,7 @@ footer .copyright {
     color: var(--white);
   }
 
-  .academics-II .column-2 h1:hover {
+  .academics-II .column-2 a:hover {
     color: var(--green);
   }
 
