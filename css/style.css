@@ -798,6 +798,8 @@ nav ul li ul li a {
 
 .course-content {
   margin: 20px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  border-radius: 5px;
 }
 
 .course-content img {
@@ -812,7 +814,6 @@ nav ul li ul li a {
 .course-inner-desc {
   padding: 15px;
   margin: 0;
-  border: #eee solid 1px;
   border-radius: 0 0 5px 5px;
 }
 
