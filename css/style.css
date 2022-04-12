@@ -474,7 +474,7 @@ nav ul li ul li a {
   min-height: 4px;
   outline: none;
   overflow: visible;
-  padding: 19px 26px;
+  padding: 30px 50px;
   pointer-events: auto;
   position: relative;
   text-align: center;
@@ -491,7 +491,7 @@ nav ul li ul li a {
 
 @media (min-width: 768px) {
   .course-button {
-    padding: 19px 32px;
+    padding: 30px 50px;
   }
 }
 
@@ -583,7 +583,7 @@ nav ul li ul li a {
   min-height: 64px;
   outline: none;
   overflow: visible;
-  padding: 19px 26px;
+  padding: 30px 50px;
   pointer-events: auto;
   position: relative;
   text-align: center;
@@ -600,7 +600,7 @@ nav ul li ul li a {
 
 @media (min-width: 768px) {
   .features-button {
-    padding: 19px 32px;
+    padding: 30px 50px;
   }
 }
 
