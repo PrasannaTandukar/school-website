@@ -353,6 +353,7 @@ nav ul li ul li a {
 .school-name {
   color: var(--blue);
   font-size: 28px;
+  text-align: center;
 }
 
 .u2-features1 {
