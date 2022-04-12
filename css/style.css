@@ -820,7 +820,7 @@ nav ul li ul li a {
 .course-inner-desc-top {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-end;
   margin: 10px auto 15px auto;
 }
 
@@ -1115,10 +1115,6 @@ footer .copyright {
     letter-spacing: 2px;
     font-size: 45px;
     color: var(--white);
-  }
-
-  .academics-II .column-2 a:hover {
-    color: var(--green);
   }
 
   .academics-II-content {
