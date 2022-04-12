@@ -355,6 +355,18 @@ nav ul li ul li a {
   font-size: 28px;
 }
 
+.u2-features1 {
+  color: var(--blue);
+  font-size: 28px;
+  text-align: center;
+}
+
+.u2-features2 {
+  color: var(--blue);
+  font-size: 28px;
+  text-align: center;
+  margin-top: 30px;
+}
 .home-description p {
   margin-top: 20px;
 }
@@ -796,6 +808,23 @@ nav ul li ul li a {
 .academics-II-content h1 {
   padding-top: 15px;
 }
+
+/* Start of why u2 page */
+
+.u2 h1 {
+  margin-top: 15px;
+}
+
+.u2 .school-history p {
+  margin-top: 15px;
+}
+
+.about-us .school-history li {
+  margin-top: 15px;
+  margin-left: 15px;
+}
+/* End of why u2 page */
+
 /* End of academics 2 page */
 
 /* Start of courses page */
@@ -1095,7 +1124,7 @@ footer .copyright {
     justify-content: space-around;
     height: 95vh;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url(../img/1.jpg);
+      url(../photos/Academics/front.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
