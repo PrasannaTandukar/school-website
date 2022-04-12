@@ -826,6 +826,10 @@ nav ul li ul li a {
 .course-inner-desc-bottom p {
   margin-top: 10px;
 }
+
+.course-inner-desc-bottom ul {
+  margin-left: 20px;
+}
 /* End of courses page */
 
 /* Start of footer */
