@@ -92,11 +92,15 @@ p {
 
 .top-nav-element a {
   text-decoration: none;
-  color: #ffffff;
+  color: var(--white);
+}
+
+.top-nav-element:hover {
+  color: var(--orange) !important;
 }
 
 .top-nav-element a:hover {
-  color: #f06e22;
+  color: var(--orange);
 }
 /* End of top-nav bar */
 
