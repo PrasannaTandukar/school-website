@@ -565,6 +565,43 @@ nav ul li ul li a {
 }
 /* End of academics 2 page */
 
+/* Start of courses page */
+.courses h1 {
+  text-align: center;
+}
+
+.course-content {
+  margin: 20px;
+}
+
+.course-content img {
+  display: block;
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.course-inner-desc {
+  padding: 15px;
+  margin: 0;
+  border: #eee solid 1px;
+  border-radius: 0 0 5px 5px;
+}
+
+.course-inner-desc-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px auto 15px auto;
+}
+
+.course-inner-desc-bottom p {
+  margin-top: 10px;
+}
+/* End of courses page */
+
 /* Start of footer */
 
 footer ul {
@@ -839,6 +876,25 @@ footer .copyright {
   .academics-II-content {
     margin: 15px auto auto auto;
     max-width: 80vw;
+  }
+
+  .courses h1 {
+    font-size: 40px;
+  }
+
+  .course-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .course-container img {
+    height: 350px;
+  }
+
+  .course-content {
+    width: 500px;
   }
 
   footer .row {
