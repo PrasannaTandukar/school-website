@@ -357,6 +357,7 @@ nav ul li ul li a {
   text-align: center;
 }
 
+
 .u2-features1 {
   color: var(--blue);
   font-size: 28px;
@@ -1218,7 +1219,7 @@ footer .copyright {
   height: 39px;
   width: 37px;
   text-align: center;
-  background: green;
+  background:#f
   display: block;
   border-radius: 3px;
   cursor: pointer;
