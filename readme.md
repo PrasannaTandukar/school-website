@@ -20,7 +20,7 @@ The default page is **index.html** which is in the root directory. The **common*
 
 > jquery.min.js
 
-The function inside this code is respoinsible for making the navigation bar menu responsive.
+The function inside this code is responsible for making the navigation bar menu responsive.
 
 > main.js
 
@@ -33,3 +33,9 @@ The functions inside this javascript code is responsible for the modal view func
 > see-more.js
 
 The function moreLess(value) is responsible for making the See more, See Less functionality work in the website.
+
+## Contributors
+
+Prasanna Tandukar
+Suyog Kadariya
+Dstudios Nepal
