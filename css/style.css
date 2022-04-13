@@ -383,6 +383,33 @@ nav ul li ul li a {
 .home-description-inner {
   margin: 30px 20px;
 }
+
+.ach-mis-vis {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.ach-mis-vis div {
+  padding: 10px;
+  background-color: var(--green-dark);
+  margin: 10px;
+  width: 150px;
+  border-radius: 5px;
+  color: var(--white);
+}
+
+.ach-mis-vis i,
+.ach-mis-vis span {
+  display: block;
+  text-align: center;
+}
+
+.index-review {
+  display: none;
+}
+
 /* End of Homepage Description */
 /* End of homepage */
 
@@ -1055,13 +1082,8 @@ footer .copyright {
     max-width: 1420px;
   }
 
-  .home-description-inner {
-    max-width: 650px;
-  }
-
   .home-description p {
     margin-top: 25px;
-    max-width: 650px;
     font-size: 17px;
   }
 
@@ -1073,6 +1095,38 @@ footer .copyright {
     width: 720px;
     border-top-right-radius: 0;
     border-bottom-left-radius: 5px;
+  }
+
+  .ach-mis-vis div {
+    width: 300px;
+    padding: 30px;
+    font-size: 23px;
+    letter-spacing: 1.5px;
+  }
+
+  .ach-mis-vis span {
+    margin-top: 10px;
+  }
+
+  .index-review {
+    height: 400px;
+    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--white);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(../photos/Academics/front.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+  }
+
+  .index-review h1,
+  .index-review h2 {
+    text-align: center;
   }
 
   .about-us .school-image {
