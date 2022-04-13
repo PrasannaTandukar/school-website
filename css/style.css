@@ -649,7 +649,7 @@ nav ul li ul li a {
 }
 
 .features-button:before {
-  background-color: rgba(74, 200, 58, 0.32);
+  background-color: var(--green-dark);
   content: "";
   display: block;
   height: 100%;
@@ -807,11 +807,14 @@ nav ul li ul li a {
 }
 
 .academics-II .column-2 {
-  display: none;
+  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .academics-II .column-2 h1 {
-  margin: 25px;
+  margin: 10px 25px;
   cursor: pointer;
 }
 
@@ -828,6 +831,7 @@ nav ul li ul li a {
 
 .academics-II-content h1 {
   padding-top: 15px;
+  margin-top: 0;
 }
 
 .academics-II-content ul {
