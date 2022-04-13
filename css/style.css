@@ -2,18 +2,6 @@
 
 /* Global variables */
 :root {
-  /* grey */
-  --grey-50: #f0f4f8;
-  --grey-100: #d9e2ec;
-  --grey-200: #bcccdc;
-  --grey-300: #9fb3c8;
-  --grey-400: #829ab1;
-  --grey-500: #627d98;
-  --grey-600: #486581;
-  --grey-700: #334e68;
-  --grey-800: #243b53;
-  --grey-900: #102a43;
-
   /* rest of the colors */
   --black: #222;
   --white: #fff;
@@ -29,13 +17,8 @@
   /* rest of the vars */
   --backgroundColor: var(--white);
   --textColor: var(--grey-900);
-  --borderRadius: 0.25rem;
   --letterSpacing: 1px;
   --transition: 0.3s ease-in-out all;
-  --max-width: 1120px;
-  --fixed-width: 600px;
-  --fluid-width: 90vw;
-  --nav-link-font-size: 18px;
 
   /* box shadow*/
   --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
