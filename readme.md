@@ -1,1 +1,1 @@
-#Universal Higher Secondary School Website
+# Universal Higher Secondary School Website
