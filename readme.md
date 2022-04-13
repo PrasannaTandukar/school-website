@@ -37,5 +37,7 @@ The function moreLess(value) is responsible for making the See more, See Less fu
 ## Contributors
 
 Prasanna Tandukar
+
 Suyog Kadariya
+
 Dstudios Nepal
