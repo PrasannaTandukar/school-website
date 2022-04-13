@@ -982,7 +982,7 @@ footer hr {
 }
 
 footer .copyright {
-  text-align: center;
+  text-align: center !important;
   color: #ffffff;
   text-transform: capitalize;
   padding-top: 20px;
