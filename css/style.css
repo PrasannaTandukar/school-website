@@ -882,6 +882,26 @@ nav ul li ul li a {
 .course-inner-desc-bottom ul {
   margin-left: 20px;
 }
+
+.top-courses {
+  position: relative;
+}
+
+.top-courses .apply-button {
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 20px;
+  width: auto;
+  border: none;
+  background-color: var(--box-green);
+  padding: 10px 15px;
+  font-size: 20px;
+}
+
+.top-courses .apply-button i {
+  display: block;
+}
 /* End of courses page */
 
 /* Start of footer */
@@ -1190,6 +1210,13 @@ footer .copyright {
 
   .course-content {
     width: 500px;
+  }
+
+  .top-courses .apply-button {
+    top: 0;
+    left: 170px;
+    font-size: 28px;
+    padding: 10px 20px;
   }
 
   footer .row {
