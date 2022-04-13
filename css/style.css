@@ -1078,7 +1078,7 @@ footer .copyright {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-top: 50px;
+    margin: 50px auto;
     max-width: 1420px;
   }
 
