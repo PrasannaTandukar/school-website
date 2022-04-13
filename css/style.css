@@ -474,6 +474,11 @@ nav ul li ul li a {
   cursor: pointer;
 }
 
+.ap-sp {
+  width: 150px;
+  margin-left: 0;
+}
+
 /* starting of course button */
 
 .course-button {
