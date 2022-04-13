@@ -513,7 +513,7 @@ nav ul li ul li a {
   min-height: 4px;
   outline: none;
   overflow: visible;
-  padding: 30px 50px;
+  padding: 20px 40px;
   pointer-events: auto;
   position: relative;
   text-align: center;
@@ -622,7 +622,7 @@ nav ul li ul li a {
   min-height: 64px;
   outline: none;
   overflow: visible;
-  padding: 30px 50px;
+  padding: 20px 40px;
   pointer-events: auto;
   position: relative;
   text-align: center;
@@ -632,7 +632,7 @@ nav ul li ul li a {
   -webkit-user-select: none;
   touch-action: manipulation;
   vertical-align: middle;
-  width: auto;
+  min-width: 155px;
   word-break: keep-all;
   z-index: 0;
 }
@@ -649,7 +649,7 @@ nav ul li ul li a {
 }
 
 .features-button:before {
-  background-color: rgba(19, 155, 46, 0.32);
+  background-color: var(--green-dark);
   content: "";
   display: block;
   height: 100%;
@@ -809,7 +809,7 @@ nav ul li ul li a {
 .academics-II .column-2 {
   display: block;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
 }
 
@@ -1258,6 +1258,11 @@ footer .copyright {
     left: 170px;
     font-size: 28px;
     padding: 10px 20px;
+  }
+
+  .features-button,
+  .course-button {
+    padding: 30px 50px;
   }
 
   footer .row {
