@@ -649,7 +649,7 @@ nav ul li ul li a {
 }
 
 .features-button:before {
-  background-color: var(--green-dark);
+  background-color: rgba(22, 174, 67, 0.32);
   content: "";
   display: block;
   height: 100%;
