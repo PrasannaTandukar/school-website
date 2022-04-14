@@ -1234,6 +1234,14 @@ footer .copyright {
     max-width: 80vw;
   }
 
+  .academics-II-content h1 {
+    text-align: left;
+  }
+
+  .academics-II-content .heading-hr {
+    display: none !important;
+  }
+
   .courses h1 {
     font-size: 40px;
   }
