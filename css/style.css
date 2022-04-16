@@ -230,8 +230,13 @@ nav ul li ul li a {
 .navigation – the outer wrapper for the navbar. Specifies the height and color, and will stretch the full width of the viewport.
 */
 .navigation {
+  position: relative;
   height: 70px;
   background: #ffffff;
+}
+
+.navigation-apply {
+  display: none;
 }
 
 /*
@@ -1053,6 +1058,23 @@ footer .copyright {
     display: flex;
     flex-direction: row;
     justify-content: center;
+  }
+
+  .navigation-apply {
+    display: block;
+    position: absolute;
+    z-index: 500;
+  }
+
+  .navigation-apply a {
+    display: inline-block;
+    padding: 22px;
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: var(--white);
+    background-color: var(--green-dark);
+    font-weight: bold;
   }
 
   .slider-container {
