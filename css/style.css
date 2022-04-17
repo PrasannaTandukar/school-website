@@ -1651,3 +1651,9 @@ iframe {
   border-radius: 3px;
 }
 /*end of enroll now button*/
+
+.col .testimonials {
+  background-color: #e8edee;
+  border-radius: 5px;
+  box-shadow: var(--shadow-1);
+}
