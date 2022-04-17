@@ -65,7 +65,11 @@ p {
 }
 
 /* Start of top-nav bar */
-#top-nav-bar {
+.inner-nav-1 {
+  display: none;
+}
+
+.inner-nav-2 {
   display: none;
 }
 
@@ -87,6 +91,11 @@ p {
 
 .top-nav-element a:hover {
   color: var(--orange);
+}
+
+#top-nav-bar a {
+  text-decoration: none;
+  color: var(--white);
 }
 /* End of top-nav bar */
 
@@ -234,10 +243,6 @@ nav ul li ul li a {
   height: 70px;
   background: #ffffff;
 }
-
-/* .navigation-apply {
-  display: none;
-} */
 
 /* Enroll now button top*/
 
@@ -1106,9 +1111,11 @@ footer .copyright {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
   }
 
   .inner-nav-1 {
+    display: block;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -1120,26 +1127,10 @@ footer .copyright {
   }
 
   .inner-nav-2 {
+    display: block;
     display: flex;
     flex-direction: row;
     justify-content: center;
-  }
-
-  .navigation-apply {
-    display: block;
-    position: absolute;
-    z-index: 500;
-  }
-
-  .navigation-apply a {
-    display: inline-block;
-    padding: 22px;
-    text-decoration: none;
-    font-size: 18px;
-    letter-spacing: 3px;
-    color: var(--white);
-    /* background-color: var(--orange); */
-    font-weight: bold;
   }
 
   .slider-container {
