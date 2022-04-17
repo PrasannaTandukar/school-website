@@ -235,9 +235,74 @@ nav ul li ul li a {
   background: #ffffff;
 }
 
-.navigation-apply {
+/* .navigation-apply {
   display: none;
+} */
+
+/* Enroll now button top*/
+
+.button-49,
+.button-49:after {
+  width: 150px;
+  height: 76px;
+  line-height: 78px;
+  font-size: 20px;
+  font-family: "Bebas Neue", sans-serif;
+  background: linear-gradient(45deg, transparent 5%, #f06e22 5%);
+  border: 0;
+  color: #fff;
+  letter-spacing: 3px;
+  box-shadow: 6px 0px 0px #54ab40;
+  outline: transparent;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
+
+/* .button-49:after {
+  --slice-0: inset(50% 50% 50% 50%);
+  --slice-1: inset(80% -6px 0 0);
+  --slice-2: inset(50% -6px 30% 0);
+  --slice-3: inset(10% -6px 85% 0);
+  --slice-4: inset(40% -6px 43% 0);
+  --slice-5: inset(80% -6px 5% 0); */
+
+/* content: "ALTERNATE TEXT";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    45deg,
+    transparent 3%,
+    #54ab40 3%,
+    #54ab40 5%,
+    #f06e22 5%
+  );
+  text-shadow: -3px -3px 0px #f8f005, 3px 3px 0px #54ab40;
+  clip-path: var(--slice-0); */
+
+.button-49 :hover {
+  cursor: pointer;
+}
+/* .button-49:hover:after {
+  animation: 1s glitch;
+  animation-timing-function: steps(2, end);
+} */
+
+@media (min-width: 768px) {
+  .button-49,
+  .button-49:after {
+    width: 200px;
+    height: 86px;
+    line-height: 88px;
+  }
+}
+
+/*end of enroll now button top*/
 
 /*
 .nav-container – the inner wrapper for the navbar. Defines how far the actual content should stretch.
@@ -1073,7 +1138,7 @@ footer .copyright {
     font-size: 18px;
     letter-spacing: 3px;
     color: var(--white);
-    background-color: var(--orange);
+    /* background-color: var(--orange); */
     font-weight: bold;
   }
 
@@ -1331,7 +1396,32 @@ footer .copyright {
 
 /* End of  go-to top button */
 
-/* end of download button */
+/* enroll now button */
+/* .enroll-now {
+  position: fixed;
+  top: 80px;
+  left: 1px;
+  z-index: 9;
+}
+
+.enroll-now a {
+  height: 80px;
+  width: 90px;
+  text-align: center;
+  background-color: red;
+  display: block;
+  border-radius: 3px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.enroll-now a span {
+  color: #f2f2f2;
+  line-height: 39px;
+  font-size: 25px;
+} */
+
+/* End of  enroll now button */
 
 /*Video container*/
 
@@ -1370,6 +1460,22 @@ iframe {
   margin: 10px;
   border-radius: 5px;
   background-color: var(--box-green);
+  text-decoration: none;
+  color: var(--white);
+}
+
+.download {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.download a {
+  display: block;
+  padding: 10px 15px;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: #f06e22;
   text-decoration: none;
   color: var(--white);
 }
@@ -1480,3 +1586,77 @@ iframe {
 }
 
 /* end of google reviews section*/
+
+/*Enroll Now button*/
+.enroll-now {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  text-decoration: none;
+}
+
+.enroll-now a {
+  text-decoration: none;
+}
+
+.enroll-now:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #f06e22,
+    #54ab40,
+    #044fa2,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-enroll-now 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-enroll-now {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.enroll-now:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgb(201, 21, 21);
+  left: 0;
+  top: 0;
+  border-radius: 3px;
+}
+/*end of enroll now button*/
