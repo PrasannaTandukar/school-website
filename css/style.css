@@ -1299,6 +1299,10 @@ footer .copyright {
   footer {
     padding: 70px;
   }
+
+  .notice-item {
+    max-width: 700px !important;
+  }
 }
 
 /* go-to top button */
@@ -1330,10 +1334,6 @@ footer .copyright {
 /* end of download button */
 
 /*Video container*/
-
-.video-main {
-  position: relative;
-}
 
 .video-main p,
 .video-main h4 {
@@ -1375,3 +1375,31 @@ iframe {
 }
 
 /* end of video container*/
+
+.notice-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 20px auto;
+  padding: 10px 15px;
+  background-color: #e8edee;
+  box-shadow: var(--shadow-2);
+  border-radius: 5px;
+  max-width: 90vw;
+}
+
+.notice-item h4 {
+  margin: 8px 0;
+}
+
+.notice-item a {
+  display: block;
+  padding: 5px 10px;
+  font-size: 15px;
+  text-decoration: none;
+  color: var(--white);
+  background-color: var(--box-green);
+  border-radius: 5px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
