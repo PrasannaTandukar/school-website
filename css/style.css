@@ -1101,6 +1101,14 @@ footer .copyright {
 
 /*  Media query runs when the screen size is greater than 600px */
 @media only screen and (min-width: 1000px) {
+  #top-img-head {
+    display: block !important;
+    height: 300px;
+    width: auto;
+    object-fit: cover;
+    margin: auto;
+  }
+
   h1 {
     font-size: 40px;
   }
@@ -1661,4 +1669,14 @@ iframe {
 marquee {
   margin: 0;
   background-color: var(--orange);
+}
+
+#top-img-head {
+  display: none;
+}
+
+hr {
+  height: 10px;
+  border: none;
+  background-color: var(--box-green);
 }
