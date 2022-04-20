@@ -1103,7 +1103,7 @@ footer .copyright {
 @media only screen and (min-width: 1000px) {
   #top-img-head {
     display: block !important;
-    height: 300px;
+    height: 120px;
     width: auto;
     object-fit: cover;
     margin: auto;
@@ -1179,6 +1179,14 @@ footer .copyright {
 
   .ach-mis-vis span {
     margin-top: 10px;
+  }
+
+  .ach {
+    background-color: var(--blue) !important;
+  }
+
+  .vis {
+    background-color: var(--orange) !important;
   }
 
   .index-review {
@@ -1675,7 +1683,7 @@ marquee {
   display: none;
 }
 
-hr {
+#big-hr {
   height: 10px;
   border: none;
   background-color: var(--box-green);
