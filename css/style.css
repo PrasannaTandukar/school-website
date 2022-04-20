@@ -563,7 +563,54 @@ nav ul li ul li a {
   width: 150px;
   margin-left: 0;
 }
+/* .popup .overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 7);
+  z-index: 1;
+  display: none;
+}
 
+.popup .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background: #ffffff;
+  width: 450px;
+  height: 220px;
+  z-index: 2;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.popup .close-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 30px;
+  height: 30px;
+  background: #222;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  cursor: po;
+}
+.popup .active .overlay {
+  display: block;
+}
+
+.popup .active .content {
+  transition: all 300ms ease-in-out;
+  transform: translate(-50%, -50%) scale(1);
+} */
 /* starting of course button */
 
 .course-button {
@@ -1617,18 +1664,7 @@ iframe {
 
 .enroll-now:before {
   content: "";
-  background: linear-gradient(
-    45deg,
-    #f06e22,
-    #54ab40,
-    #044fa2,
-    #48ff00,
-    #00ffd5,
-    #002bff,
-    #7a00ff,
-    #ff00c8,
-    #ff0000
-  );
+  background: linear-gradient(45deg, #54ab40, #044fa2, #f06e22);
   position: absolute;
   top: -2px;
   left: -2px;
@@ -1661,7 +1697,7 @@ iframe {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgb(201, 21, 21);
+  background: #ff7426;
   left: 0;
   top: 0;
   border-radius: 3px;
