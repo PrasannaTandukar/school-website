@@ -1657,3 +1657,8 @@ iframe {
   border-radius: 5px;
   box-shadow: var(--shadow-1);
 }
+
+marquee {
+  margin: 0;
+  background-color: var(--orange);
+}
