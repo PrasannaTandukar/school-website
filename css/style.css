@@ -563,6 +563,25 @@ nav ul li ul li a {
   width: 150px;
   margin-left: 0;
 }
+
+.apply-button1 {
+  display: block;
+  width: 130px;
+  text-align: center;
+  margin: 15px auto auto auto;
+  padding: 15px 20px;
+  text-decoration: none;
+  background-color: #ff7426;
+  color: var(--white);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.ap-sp {
+  width: 150px;
+  margin-left: 0;
+}
+
 /* .popup .overlay {
   position: fixed;
   top: 0px;
