@@ -1127,6 +1127,14 @@ footer .copyright {
 
 /* End of footer */
 
+.ach {
+  background-color: var(--blue) !important;
+}
+
+.vis {
+  background-color: var(--orange) !important;
+}
+
 /*  Media query runs when the screen size is greater than 600px */
 @media only screen and (min-width: 1000px) {
   #top-img-head {
